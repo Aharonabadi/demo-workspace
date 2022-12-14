@@ -1,0 +1,11 @@
+Scanning the project 
+1.	Open browser and login into moriaaharon GitHub
+2.	Go to https://www.sonarsource.com/products/sonarcloud/ page 
+3.	Login with GitHub
+4.	Create an organization manually 
+5.	Give some key 
+6.	Choose a free plan
+7.	Analyze new project 
+8.	Choose Project key
+9.	 choose With other CI tools
+10.	Choose maven 

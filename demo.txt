@@ -1,0 +1,25 @@
+	Open terminal 0 
+Cd ~/private/poc/deep-active-analysis-/demo/demo-workspace
+	Change java to java 8 version 
+	Run mvn clean install 
+	Open termina 1
+			Run:  java -jar service-1/target/service-1-0.0.1-SNAPSHOT.jar
+
+	Open termina 2
+			Run:  java -jar service-2/target/service-2-0.0.1-SNAPSHOT.jar
+Open termina 3
+			Run:  java -jar service-3/target/service-3-0.0.1-SNAPSHOT.jar
+
+	In terminal 0 verify that jar service-3/myfile.txt exists with content “Hello from myfile.txt” 
+
+	In terminal 0 run: 
+		curl "localhost:8081/zipkin?name=myfile"
+		and get:
+Hi service1...Hi service2...Hi service3...Hello from myfile.txt
+
+
+
+
+	
+	
+
