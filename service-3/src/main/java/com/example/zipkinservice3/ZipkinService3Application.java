@@ -44,7 +44,6 @@ class ZipkinController{
 	public String zipkinService1(@RequestParam(value = "fileName") String fileNmae) throws IOException {
 		LOG.info("Inside zipkinService 3..");
 
-		File file = new File(".");
 		String content = Files.readString(new File(".",fileNmae).toPath());
 
 		return "Hi service3..." + content;

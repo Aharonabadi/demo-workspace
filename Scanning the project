@@ -9,3 +9,13 @@ Scanning the project
 8.	Choose Project key
 9.	 choose With other CI tools
 10.	Choose maven 
+11. add to the pom:
+	<properties>
+	  <sonar.organization>demo-app-scan</sonar.organization>
+	  <sonar.host.url>https://sonarcloud.io</sonar.host.url>
+	</properties>
+12. scan using 
+	export  SONAR_TOKEN=0acafc3ea13f5ac10b9904caa9191a38073cec0c
+	mvn verify org.sonarsource.scanner.maven:sonar-maven-plugin:sonar -Dsonar.projectKey=scan-demo1
+
+

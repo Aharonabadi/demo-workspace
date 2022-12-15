@@ -17,6 +17,12 @@ Open termina 3
 		and get:
 Hi service1...Hi service2...Hi service3...Hello from myfile.txt
 
+scan wirh sonar:
+export  SONAR_TOKEN=0acafc3ea13f5ac10b9904caa9191a38073cec0c
+mvn verify org.sonarsource.scanner.maven:sonar-maven-plugin:sonar -Dsonar.projectKey=scan-demo1
+
+
+
 
 
 

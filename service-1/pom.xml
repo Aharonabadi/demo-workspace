@@ -17,6 +17,11 @@
 		<version>0.0.1-SNAPSHOT</version>
   </parent>
 
+  <properties>
+  <sonar.organization>scan-demo1</sonar.organization>
+  <sonar.host.url>https://sonarcloud.io</sonar.host.url>
+</properties>
+
 	
 
 	<dependencies>
